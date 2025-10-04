@@ -1,0 +1,7 @@
+path: ./dataset  # Root of images/labels
+train: images/train
+val: images/val
+test: images/test  # For later eval
+
+nc: 1  # Number of classes
+names: ['car']  # Class names
