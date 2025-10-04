@@ -1,8 +1,8 @@
-# 🚗 YOLO Car Detector
+# YOLO Car Detector
 
 A computer vision project that uses a pre-trained YOLOv8 model to detect cars in images, fine-tuned on a [car dataset](https://www.kaggle.com/datasets/sshikamaru/car-object-detection/data)
 
-## 🎯 Features
+## Features
 
 - **Pre-trained YOLO Model**: Uses YOLOv8 nano for fast object detection
 - **Custom Fine-tuning**: Fine-tuned on car-specific dataset
@@ -10,14 +10,14 @@ A computer vision project that uses a pre-trained YOLOv8 model to detect cars in
 - **GPU Acceleration**: CUDA support for faster training and inference
 - **High Accuracy**: Achieves good mAP on validation set
 
-## 📊 Dataset
+## Dataset
 
 - **Source**: [Kaggle Car Object Detection Dataset](https://www.kaggle.com/datasets/sshikamaru/car-object-detection/data)
 - **Classes**: 1 (car)
 - **Split**: 80% train, 10% validation, 10% test
 - **Format**: YOLO format with normalized bounding boxes
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -70,7 +70,7 @@ model = YOLO('fine_tuned_car_yolo.pt')
 results = model('path/to/image.jpg', conf=0.5)
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 yolo-car-detector/
@@ -105,7 +105,7 @@ yolo-car-detector/
 └── README.md                # This file
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Training Parameters (Used)
 
@@ -148,7 +148,7 @@ nc: 1
 names: ['car']
 ```
 
-## 📈 Results & Performance
+## Results & Performance
 
 ### Training Metrics
 
@@ -207,7 +207,7 @@ Trained model checkpoints in `runs/detect/car_detector_runs2/weights/`:
 - **last.pt** - Final epoch checkpoint
 - **fine_tuned_car_yolo.pt** - Exported model for easy deployment
 
-## � Usage Examples
+## Usage Examples
 
 ### Quick Inference
 
@@ -229,7 +229,7 @@ model = YOLO('yolov8s.pt')
 model = YOLO('yolov8n.pt')
 ```
 
-## 📋 Requirements
+## Requirements
 
 - Python 3.11+
 - PyTorch with CUDA support (recommended)
