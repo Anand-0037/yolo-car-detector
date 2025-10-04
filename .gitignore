@@ -1,2 +1,56 @@
-.cursor/
+
+.vscode/
+.idea/
+
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.pyzw
+*.pyzwz
+
+# Project specific
+digest.txt
+
+# Training outputs and large artifacts
+runs/
+*.pt
+*.onnx
+*.engine
+*.bin
+*.tflite
+*.pdf
+*.log
+*.csv
+*.zip
+Ultralytics/
+/.config/Ultralytics/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+logs/
+*.log
+
+./kaggle/
+./__pycache__/
+~./
